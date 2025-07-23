@@ -30,11 +30,11 @@ Used a temporary SQLite database for isolated test runs.
 
 ## Future Work (With More Time)
 
-A) Use PostgreSQL + ORM: Replace raw SQLite with SQLAlchemy/PostgreSQL.
-B) Add JWT Auth: Token-based authentication and role management.
-C) Dockerize the App: For consistent local and production builds.
-D) Add CI/CD: GitHub Actions for automatic linting, testing, and deployment.
-E) API Docs: Add Swagger/OpenAPI for clear, interactive documentation.
+ Use PostgreSQL + ORM: Replace raw SQLite with SQLAlchemy/PostgreSQL.
+ Add JWT Auth: Token-based authentication and role management.
+ Dockerize the App: For consistent local and production builds.
+ Add CI/CD: GitHub Actions for automatic linting, testing, and deployment.
+ API Docs: Add Swagger/OpenAPI for clear, interactive documentation.
 
 ## AI Usage Note
 

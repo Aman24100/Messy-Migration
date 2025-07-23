@@ -48,7 +48,7 @@
 
 ## AI Usage Note
 
-ChatGPT was used to brainstorm structural ideas and best practices for modularizing the project. All code was manually written, reviewed, and tested to ensure alignment with the assignment goals and coding standards.
+AI tool was used to brainstorm structural ideas and best practices for modularizing the project. All code was manually written, reviewed, and tested to ensure alignment with the assignment goals and coding standards.
 
 
 ## All changes were reviewed, validated, and customized before integration.

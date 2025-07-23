@@ -1,32 +1,41 @@
 ## Major Issues Identified
 
-1. Monolithic Design: All logic (routing, DB, auth) was in app.py, making the codebase hard to maintain and  scale.
-2. Security Risks: SQL queries used raw string formatting and passwords were stored without hashing.
-3. Poor Error Handling: No input validation, incorrect HTTP response codes, and unclear messages.
-4. Hardcoded Config: Database paths and secret keys were hardcoded, making it inflexible across environments.
-5. Lack of Tests: No test cases existed to validate functionality.
+- **Monolithic Design**  
+  All logic (routing, DB, authentication) was placed inside `app.py`, making the codebase difficult to maintain and scale.
+
+- **Security Risks**  
+  SQL queries used raw string formatting (vulnerable to injection), and passwords were stored without hashing.
+
+- **Poor Error Handling**  
+  There was no input validation, incorrect HTTP status codes were returned, and error messages lacked clarity.
+
+- **Hardcoded Configuration**  
+  Database paths and secret keys were hardcoded, preventing environment-specific setups and secure deployment.
+
+- **Lack of Testing**  
+  No automated test cases were available to validate functionality or catch regressions.
 
 ## Changes Implemented
 
-1. Project Structure Refactor
-Created routes/, services/, models/, and config.py.
-Blueprints used to organize routes for users and auth.
+- **Project Structure Refactor**  
+  Created `routes/`, `services/`, `models/`, and `config.py`.  
+  Used Blueprints to organize routes for `users` and `auth`.
 
-2. Security Improvements
-All database operations now use parameterized queries to prevent SQL injection.
-Passwords are now hashed using bcrypt and securely verified at login.
+- **Security Improvements**  
+  All database operations now use parameterized queries to prevent SQL injection.  
+  Passwords are hashed using `bcrypt` and securely verified during login.
 
-3. Input Validation & Status Codes
-Email and password validation is done in the service layer.
-API now returns proper HTTP status codes (e.g., 400, 404, 201, 204).
+- **Input Validation & Status Codes**  
+  Added email and password format validation in the service layer.  
+  API now responds with appropriate HTTP status codes like 400, 404, 201, and 204.
 
-4. Environment Config Support
-Added .env support with python-dotenv.
-Config.py pulls in environment-specific database path and secret keys.
+- **Environment Config Support**  
+  Integrated `.env` support via `python-dotenv`.  
+  `config.py` now loads environment-specific DB path and secrets securely.
 
-5. Testing Suite
-Added pytest-based tests for core features: user creation, login, and fetching.
-Used a temporary SQLite database for isolated test runs.
+- **Testing Suite**  
+  Implemented `pytest` tests for core functionalities: user creation, login, and retrieval.  
+  Used a temporary SQLite database to keep tests isolated and clean.
 
 ## Future Work 
 

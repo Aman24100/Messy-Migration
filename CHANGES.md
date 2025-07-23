@@ -37,7 +37,7 @@
   Implemented `pytest` tests for core functionalities: user creation, login, and retrieval.  
   Used a temporary SQLite database to keep tests isolated and clean.
 
-## Future Work 
+## Future Work(With more time) 
 
 - **Use PostgreSQL + ORM:** Replace raw SQLite with SQLAlchemy/PostgreSQL.
 - **Add JWT Auth:** Token-based authentication and role management.

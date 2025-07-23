@@ -26,4 +26,4 @@ All detailed changes, issues identified, and future improvements are documented 
 
 ---
 
-📂 For full API documentation and future roadmap → see [CHANGES.md](./CHANGES.md)
+📂 For a complete breakdown of refactoring decisions, improvements, and next steps, refer to [CHANGES.md](./CHANGES.md).

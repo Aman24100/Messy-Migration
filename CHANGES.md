@@ -48,11 +48,8 @@
 
 ## AI Usage Note
 
-Used ChatGPT to:
+ChatGPT was used to brainstorm structural ideas and best practices for modularizing the project. All code was manually written, reviewed, and tested to ensure alignment with the assignment goals and coding standards.
 
-1. Structure the refactor plan
-2. Suggest secure coding practices
-3. Draft some route logic and tests
 
 ## All changes were reviewed, validated, and customized before integration.
 

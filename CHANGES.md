@@ -28,13 +28,14 @@ Config.py pulls in environment-specific database path and secret keys.
 Added pytest-based tests for core features: user creation, login, and fetching.
 Used a temporary SQLite database for isolated test runs.
 
-## Future Work (With More Time)
+## Future Work 
 
- Use PostgreSQL + ORM: Replace raw SQLite with SQLAlchemy/PostgreSQL.
- Add JWT Auth: Token-based authentication and role management.
- Dockerize the App: For consistent local and production builds.
- Add CI/CD: GitHub Actions for automatic linting, testing, and deployment.
- API Docs: Add Swagger/OpenAPI for clear, interactive documentation.
+- **Use PostgreSQL + ORM:** Replace raw SQLite with SQLAlchemy/PostgreSQL.
+- **Add JWT Auth:** Token-based authentication and role management.
+- **Dockerize the App:** For consistent local and production builds.
+- **Add CI/CD:** GitHub Actions for automatic linting, testing, and deployment.
+- **API Docs:** Add Swagger/OpenAPI for clear, interactive documentation.
+
 
 ## AI Usage Note
 
